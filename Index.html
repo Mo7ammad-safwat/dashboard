@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <form>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-sm-8">
+                        <div class="col-md-12">
+                            <div class="col-md-2" style="float: left;">
+                                <span class="form-label">Serial</span>
+                            </div>
+                            <div class="col-md-4" style="float: left;">
+                                <input class="form-control" id="txtInvoiceNumber" placeholder="Invoice Number" />
+                            </div>
+
+                            <div class="col-md-2" style="float: left;">
+                                <span class="form-label">Date</span>
+                            </div>
+                            <div class="col-md-4" style="float: left;">
+                                <input class="form-control" id="txtInvoiceDate" type="date" placeholder="Invoice Number" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-2" style="float: left;">
+                                <span class="form-label">Delivry</span>
+                            </div>
+                            <div class="col-md-4" style="float: left;">
+                                <select id="ddlMan" class="form-control"> 
+                                <option value="">Select </option>
+                                <option value="1">ahmed </option>
+                                <option value="2">mohamed </option>
+                                <option value="3">mostafa </option>
+                            </select>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                        <div class="col-md-12 row" style="margin-bottom: 20px;;">
+
+                            <div class="col-md-2" style="float: left;">
+                                <span class="form-label col-md-12">Notes</span>
+                            </div>
+                            <div class="col-md-10" style="float: left;">
+                                <textarea id="txtNotes" class="col-md-12 form-control" placeholder="Notes">
+
+                            </textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="margin-bottom: 20px;;">
+                            <div class="col-md-12">
+                                <div class="col-md-2" style="float: left;">
+                                    <span class="form-label">Item Name</span>
+                                </div>
+                                <div class="col-md-4" style="float: left;">
+                                    <input class="form-control" id="txtItemName" placeholder="Invoice Number" />
+                                </div>
+                                <div class="col-md-2" style="float: left;">
+                                    <span class="form-label">Qty</span>
+                                </div>
+                                <div class="col-md-4" style="float: left;">
+                                    <input class="form-control" id="txtQty" placeholder="Invoice Number" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-md-2" style="float: left;">
+                                    <span class="form-label">Item Price</span>
+                                </div>
+                                <div class="col-md-4" style="float: left;">
+                                    <input class="form-control" id="txtItemPrice" placeholder="Invoice Number" />
+                                </div>
+                                <div class="col-md-4" style="float: left;">
+                                    <input type="button" class="btn btn-info" id="btnAddItem" value="Add Item" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <table class="col-md-12 table table-hover">
+                                <thead>
+                                    <th class="col-md-3">Item Name</th>
+                                    <th class="col-md-3">Qty</th>
+                                    <th class="col-md-3">Price</th>
+                                    <th class="col-md-3">
+                                        Delete
+                                    </th>
+                                </thead>
+                                <tbody id="TableBody">
+                                    <tr>
+                                        <td>T-shirt</td>
+                                        <td>3</td>
+                                        <td>4545</td>
+                                        <td>
+                                            <input class="btn btn-danger" type="button" value="Delete" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>T-shirt</td>
+                                        <td>3</td>
+                                        <td>4545</td>
+                                        <td>
+                                            <input type="button" value="Delete" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="DivPosts" class="col-sm-4">
+
+                    </div>
+                </div>
+                <input id="btnSave" class="btn btn-success col-md-4" type="button" value="Save" />
+
+            </div>
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="Index.js"></script>
+</body>
+
+</html>
